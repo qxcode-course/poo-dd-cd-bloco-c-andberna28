@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-03_19-18-50",
+            "content": "@@ -367,16 +367,24 @@\n erson%5D%0A%0A\n+    def%0A\n %0Adef mai\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-03_19-18-56",
+            "content": "@@ -622,12 +622,4 @@\n ega)\n-%0A%0Amain()\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-11-03_19-19-04",
+            "content": "@@ -294,26 +294,24 @@\n        self.\n-__\n counters: li\n@@ -342,26 +342,24 @@\n        self.\n-__\n queue: list%5B\n@@ -371,101 +371,8 @@\n n%5D%0A%0A\n-    def __str__(self):%0A        return f%22Caixas: %7Bself.__counters%7D // Espera: %7Bself.__queue%7D%22%0A\n %0Adef\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-11-03_19-22-55",
+            "content": "class Person:\n    def __init__(self, nome: str):\n        self.__nome = nome\n\n    def getNome(self):\n        return self.__nome\n    def setNome(self, value: str):\n        self.__nome = value\n\n    def __str__(self):\n        return f\"nome: {self.__nome}\"\n\n\nclass Market:\n    def __init__(self):\n        self.__counters: list[Person | None] = []\n        self.__queue: list[Person]\n\n    def __str__(self):\n        return f\"Caixas: {self.__counters} // Espera: {self.__queue}\"\n\ndef main():\n    budega = Market()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(budega)\n\nmain()",
+            "lines": "33"
+        }
+    ]
+}
