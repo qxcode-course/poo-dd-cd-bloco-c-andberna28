@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-05_21-34-15",
+            "content": "@@ -144,166 +144,4 @@\n    %0A\n-arrayVazio: list%5Bint%5D = %5B%5D%0AarrayPreenchido: list%5Bint%5D = %5B1, 2, 3, 4, 5%5D%0AarrayObjetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3), Foo(4), Foo(5)%5D%0A%0Aprint(arrayPreenchido)\n",
+            "lines": "7"
+        },
+        {
+            "label": "2025-11-05_21-37-05",
+            "content": "class Foo:\n    def __init__(self, numero: int = 0):\n        self.numero = numero\n\n    def __str__(self):\n        return f\"Foo({self.numero})\"\n    \narrayVazio: list[int] = []\narrayPreenchido: list[int] = [1, 2, 3, 4, 5]\narrayObjetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\n\nprint(arrayPreenchido)",
+            "lines": "12"
+        }
+    ]
+}
