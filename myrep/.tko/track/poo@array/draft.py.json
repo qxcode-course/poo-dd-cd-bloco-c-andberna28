@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-11-05_21-37-05",
-            "content": "class Foo:\n    def __init__(self, numero: int = 0):\n        self.numero = numero\n\n    def __str__(self):\n        return f\"Foo({self.numero})\"\n    \narrayVazio: list[int] = []\narrayPreenchido: list[int] = [1, 2, 3, 4, 5]\narrayObjetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\n\nprint(arrayPreenchido)",
+            "content": "@@ -38,16 +38,20 @@\n ero: int\n+ = 0\n ):%0A     \n@@ -64,21 +64,16 @@\n f.numero\n-: int\n  = numer\n@@ -138,116 +138,8 @@\n o%7D)%22\n-%0A%0A    # def __repr__(self): #! Mostrar o objeto de forma %C3%BAtil em depura%C3%A7%C3%A3o%0A    #     return str(self.numero)\n %0A   \n@@ -280,16 +280,22 @@\n oo(5)%5D%0A%0A\n+print(\n arrayPre\n@@ -305,369 +305,5 @@\n hido\n-.append(1) #! Adicionar ao final%0AarrayPreenchido.pop() #! Remover do final%0AarrayPreenchido.insert(3, 0) #! Inidicar o indice para adicionar em qualquer posi%C3%A7%C3%A3o do array%0A# arrayPreenchido.pop(0) #! Indicar o indice para remover qualquer elemento do array%0A%0A%0Atamanho = len(arrayPreenchido)%0Aprint(f%22Tamanho do Array: %7Btamanho%7D%22)%0Aprint(arrayPreenchido)%0Aprint(arrayVazio\n )\n",
             "lines": "12"
+        },
+        {
+            "label": "2025-11-07_22-31-22",
+            "content": "class Foo:\n    def __init__(self, numero: int):\n        self.numero: int = numero\n\n    def __str__(self):\n        return f\"Foo({self.numero})\"\n\n    # def __repr__(self): #! Mostrar o objeto de forma \u00fatil em depura\u00e7\u00e3o\n    #     return str(self.numero)\n    \narrayVazio: list[int] = []\narrayPreenchido: list[int] = [1, 2, 3, 4, 5]\narrayObjetos: list[Foo] = [Foo(1), Foo(2), Foo(3), Foo(4), Foo(5)]\n\narrayPreenchido.append(1) #! Adicionar ao final\narrayPreenchido.pop() #! Remover do final\narrayPreenchido.insert(3, 0) #! Inidicar o indice para adicionar em qualquer posi\u00e7\u00e3o do array\n# arrayPreenchido.pop(0) #! Indicar o indice para remover qualquer elemento do array\n\n\ntamanho = len(arrayPreenchido)\nprint(f\"Tamanho do Array: {tamanho}\")\nprint(arrayPreenchido)\nprint(arrayVazio)",
+            "lines": "24"
         }
     ]
 }

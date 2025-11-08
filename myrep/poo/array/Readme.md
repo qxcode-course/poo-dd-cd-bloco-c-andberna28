@@ -1,3 +1,4 @@
+
 # Manipulações em Arrays
 
 ## Estruturas lineares em cada linguagem

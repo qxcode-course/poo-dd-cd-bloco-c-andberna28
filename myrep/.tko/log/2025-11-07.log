@@ -1,0 +1,6 @@
+2025-11-07 22:31:22, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-07 22:31:22, EXEC, v:1, k:poo@array, mode:FREE, size:24
+2025-11-07 22:40:40, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-07 22:40:40, MOVE, v:1, k:poo@array, mode:PICK
+2025-11-07 22:40:41, MOVE, v:1, k:poo@array, mode:BACK
+2025-11-07 22:40:43, MOVE, v:1, k:poo@budega, mode:PICK
