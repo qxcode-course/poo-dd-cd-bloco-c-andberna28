@@ -17,8 +17,158 @@
         },
         {
             "label": "2025-11-03_19-22-55",
-            "content": "class Person:\n    def __init__(self, nome: str):\n        self.__nome = nome\n\n    def getNome(self):\n        return self.__nome\n    def setNome(self, value: str):\n        self.__nome = value\n\n    def __str__(self):\n        return f\"nome: {self.__nome}\"\n\n\nclass Market:\n    def __init__(self):\n        self.__counters: list[Person | None] = []\n        self.__queue: list[Person]\n\n    def __str__(self):\n        return f\"Caixas: {self.__counters} // Espera: {self.__queue}\"\n\ndef main():\n    budega = Market()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(budega)\n\nmain()",
+            "content": "@@ -286,27 +286,8 @@\n self\n-, qtd_counters: int\n ):%0A \n@@ -339,87 +339,8 @@\n  %5B%5D%0A\n-        for _ in range(qtd_counters):%0A            self.__counters.append(None)%0A\n     \n@@ -369,21 +369,16 @@\n %5BPerson%5D\n- = %5B%5D\n %0A%0A    de\n",
             "lines": "33"
+        },
+        {
+            "label": "2025-11-08_00-03-23",
+            "content": "@@ -543,10 +543,12 @@\n ers%7D\n-%5Cn\n+ // \n Espe\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-08_00-04-20",
+            "content": "@@ -501,132 +501,8 @@\n f):%0A\n-        counters == %22, %22.join(%5Bstr(x) for x in self.__counters%5D)%0A        queue == %22, %22.join(%5Bstr(x) for x in self.__queue%5D)%0A\n     \n@@ -523,16 +523,23 @@\n aixas: %7B\n+self.__\n counters\n@@ -550,16 +550,23 @@\n spera: %7B\n+self.__\n queue%7D%22%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-11-08_00-06-32",
+            "content": "@@ -305,12 +305,8 @@\n  int\n- = 0\n ):%0A \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-08_00-07-11",
+            "content": "@@ -519,16 +519,17 @@\n unters =\n+=\n  %22, %22.jo\n@@ -581,16 +581,17 @@\n  queue =\n+=\n  %22, %22.jo\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-08_00-07-46",
+            "content": "@@ -648,17 +648,16 @@\n Caixas: \n-%5B\n %7Bcounter\n@@ -675,17 +675,16 @@\n  %7Bqueue%7D\n-%5D\n %22%0A%0Adef m\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-08_00-08-10",
+            "content": "@@ -659,17 +659,16 @@\n ounters%7D\n-%5D\n %5CnEspera\n@@ -669,17 +669,16 @@\n Espera: \n-%5B\n %7Bqueue%7D%5D\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-08_00-08-32",
+            "content": "@@ -246,16 +246,17 @@\n nome%7D%22%0A%0A\n+%0A\n class Ma\n@@ -278,24 +278,47 @@\n _init__(self\n+, qtd_counters: int = 0\n ):%0A        s\n@@ -362,92 +362,8 @@\n  %5B%5D%0A\n-        self.__queue: list%5BPerson%5D = %5B%5D%0A%0A    def init(self, qtd_counters: int = 0):%0A\n     \n@@ -436,16 +436,56 @@\n nd(None)\n+%0A        self.__queue: list%5BPerson%5D = %5B%5D\n %0A%0A    de\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-08_00-09-42",
+            "content": "@@ -956,113 +956,8 @@\n ega)\n-%0A        elif args%5B0%5D == %22init%22:%0A            qtd_counters = args%5B1%5D%0A            budega.init(qtd_counters)\n %0A%0Ama\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-11-08_00-11-06",
+            "content": "@@ -1044,20 +1044,16 @@\n ga.init(\n-int(\n qtd_coun\n@@ -1057,17 +1057,16 @@\n ounters)\n-)\n %0A%0Amain()\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-08_00-11-20",
+            "content": "@@ -1016,20 +1016,15 @@\n s = \n-int(\n args%5B1%5D\n-)\n %0A   \n@@ -1044,16 +1044,20 @@\n ga.init(\n+int(\n qtd_coun\n@@ -1061,16 +1061,17 @@\n ounters)\n+)\n %0A%0Amain()\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-08_00-11-28",
+            "content": "@@ -495,15 +495,12 @@\n end(\n-%22-----%22\n+None\n )%0A%0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-08_00-11-49",
+            "content": "@@ -495,62 +495,15 @@\n end(\n-None)%0A%0A    def arrive(self, ):%0A        for _ in range(\n+%22-----%22\n )%0A%0A \n@@ -558,34 +558,8 @@\n in(%5B\n-%22-----%22 if x is None else \n str(\n",
+            "lines": "41"
+        },
+        {
+            "label": "2025-11-08_00-13-40",
+            "content": "@@ -501,18 +501,16 @@\n ne)%0A%0A   \n- #\n  def arr\n@@ -529,10 +529,8 @@\n %0A   \n- #\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-08_00-13-47",
+            "content": "@@ -497,24 +497,26 @@\n d(None)%0A%0A   \n+ #\n  def arrive(\n@@ -525,59 +525,36 @@\n lf, \n-person: Person\n ):%0A    \n+#\n     \n-self.__queue.append(person\n+ for _ in range(\n )%0A%0A \n@@ -1146,105 +1146,8 @@\n ers)\n-%0A        elif args%5B0%5D == %22arrive%22:%0A            person = args%5B1%5D%0A            budega.arrive(person)\n %0A%0Ama\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-08_00-16-29",
+            "content": "@@ -577,87 +577,8 @@\n n)%0A%0A\n-    def call(self, position: int):%0A        self.__counters.insert(position, )%0A%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-11-08_00-18-55",
+            "content": "@@ -592,21 +592,24 @@\n l(self, \n-index\n+position\n : int):%0A\n@@ -635,61 +635,27 @@\n ters\n-%5Bindex%5D = self.__queue%5B0%5D%0A        del self.__queue%5B0%5D\n+.insert(position, )\n %0A%0A  \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-08_00-20-05",
+            "content": "@@ -1374,99 +1374,8 @@\n son)\n-%0A        elif args%5B0%5D == %22call%22:%0A            index = args%5B1%5D%0A            budega.call(index)\n %0A%0Ama\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-08_00-20-54",
+            "content": "@@ -1423,28 +1423,23 @@\n index = \n-int(\n args%5B1%5D\n-)\n %0A       \n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-08_00-21-07",
+            "content": "@@ -687,78 +687,8 @@\n 0%5D%0A%0A\n-    def finish(self, index: int):%0A        del self.__counters%5Bindex%5D%0A%0A\n     \n@@ -1470,108 +1470,8 @@\n dex)\n-%0A        elif args%5B0%5D == %22finish%22:%0A            index = int(args%5B1%5D)%0A            budega.finish(index)\n %0A%0Ama\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-11-08_00-23-09",
+            "content": "@@ -717,32 +717,36 @@\n : int):%0A        \n+del \n self.__counters.\n@@ -748,19 +748,15 @@\n ters\n-.pop(\n+%5B\n index\n-)\n+%5D\n %0A%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-08_00-24-24",
+            "content": "@@ -745,26 +745,17 @@\n ers.\n-insert(index, None\n+pop(index\n )%0A%0A \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-08_00-26-01",
+            "content": "@@ -764,43 +764,8 @@\n one)\n-%0A        self.__counters.pop(index)\n %0A%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2025-11-08_00-26-20",
+            "content": "@@ -745,17 +745,26 @@\n ers.\n-pop(index\n+insert(index, None\n )%0A  \n@@ -785,34 +785,25 @@\n ounters.\n-insert(index, None\n+pop(index\n )%0A%0A    d\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-08_00-26-30",
+            "content": "@@ -609,111 +609,8 @@\n t):%0A\n-        if self.__counters%5Bindex%5D != None:%0A            print(%22fail: caixa ocupado%22)%0A            return%0A\n     \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-08_00-27-42",
+            "content": "@@ -609,126 +609,8 @@\n t):%0A\n-        if index %3C 0 or index %3E= len(self.__counters):%0A            print(%22fail: caixa nao existe%22)%0A            return%0A\n     \n@@ -643,14 +643,10 @@\n ex%5D \n-is not\n+!=\n  Non\n@@ -712,107 +712,8 @@\n urn%0A\n-        if len(self.__queue) == 0:%0A            print(%22fail: ninguem esperando%22)%0A            return%0A\n     \n@@ -832,128 +832,42 @@\n     \n-if index %3C 0 or index %3E= len(self.__counters):%0A            print(%22fail: caixa nao existe%22)%0A            return%0A        if\n+self.__counters.pop(index)%0A       \n  sel\n@@ -882,120 +882,28 @@\n ters\n-%5Bindex%5D is None:%0A            print(%22fail: caixa vazio%22)%0A            return%0A        self.__counters%5B\n+.insert(\n index\n-%5D =\n+,\n  None\n+)\n %0A%0A  \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-08_00-32-02",
+            "content": "@@ -894,20 +894,25 @@\n il: \n-sem clientes\n+ninguem esperando\n %22)%0A \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-08_00-32-25",
+            "content": "@@ -1126,19 +1126,18 @@\n ixa \n-i\n n\n+ao \n existe\n-nte\n %22)%0A \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-08_00-32-43",
+            "content": "@@ -1299,247 +1299,8 @@\n ne%0A%0A\n-    def give_up(self, nome: str) -%3E Person %7C None:%0A        for i, person in enumerate(self.__queue):%0A            if person.nome == nome:%0A                aux = self.__queue%5Bi%5D%0A                del self.__queue%5Bi%5D%0A                return aux%0A%0A\n     \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-08_00-35-40",
+            "content": "@@ -1318,17 +1318,17 @@\n (self, n\n-a\n+o\n me: str)\n@@ -1423,17 +1423,17 @@\n on.n\n-a\n+o\n me == n\n-a\n+o\n me:%0A\n@@ -2421,102 +2421,8 @@\n dex)\n-%0A        elif args%5B0%5D == %22giveup%22:%0A            name = args%5B1%5D%0A            budega.give_up(name)\n %0A%0Ama\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-08_00-36-51",
+            "content": "class Person:\n    def __init__(self, nome: str):\n        self.__nome = nome\n\n    def getNome(self):\n        return self.__nome\n    def setNome(self, value: str):\n        self.__nome = value\n\n    def __str__(self):\n        return f\"nome: {self.__nome}\"\n\nclass Market:\n    def __init__(self):\n        self.__counters: list[Person | None] = []\n        self.__queue: list[Person] = []\n\n    def init(self, qtd_counters: int = 0):\n        for _ in range(qtd_counters):\n            self.__counters.append(None)\n\n    def arrive(self, person: Person):\n        self.__queue.append(person)\n\n    def call(self, index: int):\n        if index < 0 or index >= len(self.__counters):\n            print(\"fail: caixa nao existe\")\n            return\n        if self.__counters[index] is not None:\n            print(\"fail: caixa ocupado\")\n            return\n        if len(self.__queue) == 0:\n            print(\"fail: sem clientes\")\n            return\n        self.__counters[index] = self.__queue[0]\n        del self.__queue[0]\n\n    def finish(self, index: int):\n        if index < 0 or index >= len(self.__counters):\n            print(\"fail: caixa inexistente\")\n            return\n        if self.__counters[index] is None:\n            print(\"fail: caixa vazio\")\n            return\n        self.__counters[index] = None\n\n    def give_up(self, name: str) -> Person | None:\n        for i, person in enumerate(self.__queue):\n            if person.name == name:\n                aux = self.__queue[i]\n                del self.__queue[i]\n                return aux\n\n    def __str__(self):\n        counters = \", \".join([\"-----\" if x is None else str(x) for x in self.__counters])\n        queue = \", \".join([str(x) for x in self.__queue])\n        return f\"Caixas: [{counters}]\\nEspera: [{queue}]\"\n\ndef main():\n    budega = Market()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(budega)\n        elif args[0] == \"init\":\n            qtd_counters = int(args[1])\n            budega.init(qtd_counters)\n        elif args[0] == \"arrive\":\n            person = args[1]\n            budega.arrive(person)\n        elif args[0] == \"call\":\n            index = int(args[1])\n            budega.call(index)\n        elif args[0] == \"finish\":\n            index = int(args[1])\n            budega.finish(index)\n        elif args[0] == \"giveup\":\n            name = args[1]\n            budega.give_up(name)\n\nmain()",
+            "lines": "85"
         }
     ]
 }
