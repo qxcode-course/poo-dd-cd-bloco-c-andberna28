@@ -1,0 +1,199 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-11_18-54-16",
+            "content": "@@ -830,45 +830,8 @@\n  0.0\n-%0A        self.barrel: list%5BLead%5D = %5B%5D\n %0A%0A  \n@@ -1053,31 +1053,39 @@\n     \n-self.barrel.append(lead\n+print(%22fail: ja existe grafite%22\n )%0A  \n@@ -1402,32 +1402,33 @@\n          return%0A\n+%0A\n         gasto = \n@@ -2047,18 +2047,16 @@\n %0A       \n- #\n  if self\n@@ -2076,18 +2076,16 @@\n %0A       \n- #\n      ret\n@@ -2143,10 +2143,8 @@\n     \n- #\n  ret\n@@ -2201,99 +2201,8 @@\n p%7D%22%0A\n-        return f%22calibre: %7Bself.thickness%7D, bico: %7Bself.tip%7D, tambor: %3C%7Bself.barrel%7D%3E%22%0A    \n %0Adef\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-11_19-07-00",
+            "content": "@@ -2067,32 +2067,34 @@\n _(self):%0A       \n+ #\n  if self.tip == \n@@ -2098,32 +2098,34 @@\n == None:%0A       \n+ #\n      return f%22ca\n@@ -2153,28 +2153,88 @@\n s%7D, \n-bico: %5B%5D, tambor: %3C%3E\n+grafite: null%22%0A        # return f%22calibre: %7Bself.thickness%7D, grafite: %7Bself.tip%7D\n %22%0A  \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-11_19-08-05",
+            "content": "@@ -1225,9 +1225,9 @@\n mpat\n-%C3%AD\n+i\n vel%22\n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-11_19-08-23",
+            "content": "@@ -1090,39 +1090,31 @@\n     \n-print(%22fail: ja existe grafite%22\n+self.barrel.append(lead\n )%0A  \n@@ -1258,10 +1258,8 @@\n     \n- #\n  sel\n@@ -1275,42 +1275,8 @@\n ead%0A\n-        self.barrel.append(lead)%0A%0A\n %0A   \n",
+            "lines": "103"
+        },
+        {
+            "label": "2025-11-11_19-09-57",
+            "content": "@@ -2143,30 +2143,8 @@\n None\n- and self.barrel == %5B%5D\n :%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-10-50",
+            "content": "@@ -2155,18 +2155,16 @@\n f.barrel\n-%5B%5D\n  == %5B%5D:%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-11-06",
+            "content": "@@ -2119,18 +2119,16 @@\n %0A       \n- #\n  if self\n@@ -2139,16 +2139,40 @@\n  == None\n+ and self.barrel%5B%5D == %5B%5D\n :%0A      \n@@ -2172,18 +2172,16 @@\n %0A       \n- #\n      ret\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-11-22",
+            "content": "@@ -2111,32 +2111,34 @@\n _(self):%0A       \n+ #\n  if self.tip == \n@@ -2142,32 +2142,34 @@\n == None:%0A       \n+ #\n      return f%22ca\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-11-48",
+            "content": "@@ -857,23 +857,16 @@\n ist%5BLead\n- %7C None\n %5D = %5B%5D%0A%0A\n@@ -2138,35 +2138,8 @@\n p ==\n- None and self.barrel%5B0%5D is\n  Non\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-16-01",
+            "content": "@@ -2163,16 +2163,17 @@\n .barrel%5B\n+0\n %5D is Non\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-16-07",
+            "content": "@@ -2162,16 +2162,18 @@\n f.barrel\n+%5B%5D\n  is None\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-16-12",
+            "content": "@@ -2163,18 +2163,18 @@\n .barrel \n-==\n+is\n  None:%0A \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-16-22",
+            "content": "@@ -2141,16 +2141,40 @@\n f.tip ==\n+ None and self.barrel ==\n  None:%0A \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-16-45",
+            "content": "@@ -2145,39 +2145,8 @@\n p ==\n- None and self.barrel%5B0%5D is not\n  Non\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-18-50",
+            "content": "@@ -2163,17 +2163,17 @@\n .barrel%5B\n-1\n+0\n %5D is not\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-18-59",
+            "content": "@@ -857,16 +857,23 @@\n ist%5BLead\n+ %7C None\n %5D = %5B%5D%0A%0A\n@@ -2145,15 +2145,46 @@\n p ==\n+ None and self.barrel%5B1%5D is not\n  None:%0A\n-\n     \n@@ -2253,66 +2253,8 @@\n %3C%3E%22%0A\n-        bico_str = %22%5B%5D%22 if self.tip == None else self.tip%0A\n     \n@@ -2304,16 +2304,16 @@\n o: %7B\n-bico_str\n+self.tip\n %7D, t\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-23-16",
+            "content": "@@ -2119,18 +2119,16 @@\n %0A       \n- #\n  if self\n@@ -2148,18 +2148,16 @@\n %0A       \n- #\n      ret\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-11-11_19-23-28",
+            "content": "@@ -2277,72 +2277,8 @@\n tip%0A\n-        tambor_str = %22%3C%3E%22 if self.barrel == %5B%5D else self.barrel%0A\n     \n@@ -2349,18 +2349,19 @@\n : %3C%7B\n-tambor_str\n+self.barrel\n %7D%3E%22%0A\n",
+            "lines": "106"
+        },
+        {
+            "label": "2025-11-11_19-24-29",
+            "content": "@@ -2407,16 +2407,17 @@\n tambor: \n+%3C\n %7Btambor_\n@@ -2420,16 +2420,17 @@\n bor_str%7D\n+%3E\n %22%0A    %0Ad\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-24-35",
+            "content": "@@ -660,17 +660,16 @@\n eturn f%22\n-%3C\n %5B%7Bself._\n@@ -712,17 +712,16 @@\n __size%7D%5D\n-%3E\n %22%0A%0A%0Aclas\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-26-43",
+            "content": "@@ -1045,34 +1045,32 @@\n : Lead):%0A       \n- #\n  if self.hasGraf\n@@ -1079,26 +1079,24 @@\n e():%0A       \n- #\n      print(%22\n@@ -1120,34 +1120,32 @@\n rafite%22)%0A       \n- #\n      return%0A    \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-29-57",
+            "content": "@@ -1045,32 +1045,34 @@\n : Lead):%0A       \n+ #\n  if self.hasGraf\n@@ -1077,32 +1077,34 @@\n afite():%0A       \n+ #\n      print(%22fail\n@@ -1124,32 +1124,34 @@\n rafite%22)%0A       \n+ #\n      return%0A    \n@@ -1262,32 +1262,34 @@\n   return%0A       \n+ #\n  self.tip = lead\n@@ -1292,26 +1292,24 @@\n lead%0A       \n- #\n  self.barrel\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-31-08",
+            "content": "@@ -1264,18 +1264,16 @@\n %0A       \n- #\n  self.ti\n@@ -1280,32 +1280,34 @@\n p = lead%0A       \n+ #\n  self.barrel.app\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-32-07",
+            "content": "@@ -2106,32 +2106,135 @@\n  __str__(self):%0A\n+        # if self.tip == None:%0A        #     return f%22calibre: %7Bself.thickness%7D, bico: %5B%5D, tambor: %3C%3E%22%0A\n         bico_str\n@@ -2338,19 +2338,16 @@\n f.barrel\n-%5B1%5D\n %0A       \n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-11_19-35-19",
+            "content": "@@ -2212,28 +2212,26 @@\n f.barrel == \n-None\n+%5B%5D\n  else self.b\n@@ -2235,16 +2235,19 @@\n f.barrel\n+%5B1%5D\n %0A       \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-35-32",
+            "content": "@@ -2216,18 +2216,20 @@\n rrel == \n-%5B%5D\n+None\n  else se\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-35-36",
+            "content": "@@ -2198,54 +2198,37 @@\n  = %22\n-, %22.join(%5B%22%3C%3E%22 if x == %5B%5D else str(x) for x in\n+%3C%3E%22 if self.barrel == %5B%5D else\n  sel\n@@ -2235,18 +2235,16 @@\n f.barrel\n-%5D)\n %0A       \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-42-16",
+            "content": "@@ -2325,17 +2325,16 @@\n tambor: \n-%3C\n %7Btambor_\n@@ -2337,17 +2337,16 @@\n bor_str%7D\n-%3E\n %22%0A    %0Ad\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-42-31",
+            "content": "@@ -660,16 +660,17 @@\n eturn f%22\n+%3C\n %5B%7Bself._\n@@ -713,16 +713,17 @@\n __size%7D%5D\n+%3E\n %22%0A%0A%0Aclas\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-42-47",
+            "content": "@@ -2192,16 +2192,18 @@\n _str = %22\n+, \n %22.join(%5B\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-43-04",
+            "content": "@@ -1266,209 +1266,60 @@\n     \n+ #\n  self.\n-barrel.append(\n+tip = \n lead\n-)%0A\n %0A    \n-def pull(self):%0A        if self.hasGrafite():%0A            print(%22fail: ja existe grafite%22)%0A            return%0A        self.tip = self.barrel%5B0%5D%0A        del self.barrel%5B0%5D\n+    self.barrel.append(lead)%0A\n %0A%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-11-11_19-46-21",
+            "content": "@@ -3128,65 +3128,8 @@\n e()%0A\n-        elif args%5B0%5D == %22pull%22:%0A            lapis.pull()%0A\n     \n",
+            "lines": "110"
+        },
+        {
+            "label": "2025-11-11_19-47-02",
+            "content": "@@ -1385,16 +1385,8 @@\n fite\n- no bico\n %22)%0A \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-11_19-47-22",
+            "content": "@@ -1142,102 +1142,8 @@\n urn%0A\n-        if self.hasGrafite():%0A            print(%22fail: ja existe grafite%22)%0A            return%0A\n     \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-11_19-47-39",
+            "content": "@@ -1112,32 +1112,118 @@\n iste grafite\n- no bico\n+%22)%0A            return%0A        if self.hasGrafite():%0A            print(%22fail: ja existe grafite\n %22)%0A         \n",
+            "lines": "115"
+        },
+        {
+            "label": "2025-11-11_19-48-01",
+            "content": "@@ -1051,18 +1051,16 @@\n %0A       \n- #\n  if self\n@@ -1077,26 +1077,24 @@\n e():%0A       \n- #\n      print(%22\n@@ -1116,16 +1116,24 @@\n  grafite\n+ no bico\n %22)%0A     \n@@ -1138,10 +1138,8 @@\n     \n- #\n     \n@@ -1626,21 +1626,16 @@\n  grafite\n- bico\n %22)%0A     \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-11_19-48-24",
+            "content": "@@ -1617,35 +1617,32 @@\n  existe grafite \n-no \n bico%22)%0A         \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-11_19-48-32",
+            "content": "@@ -1044,16 +1044,116 @@\n  Lead):%0A\n+        # if self.hasGrafite():%0A        #     print(%22fail: ja existe grafite%22)%0A        #     return%0A\n         \n",
+            "lines": "112"
+        },
+        {
+            "label": "2025-11-11_19-48-41",
+            "content": "class Lead:\n    def __init__(self, thickness: float = 0, hardness: str = \"\", size: int = 0):\n        self.__thickness: float = thickness\n        self.__hardness: str = hardness\n        self.__size: int = size\n\n    def getThickness(self):\n        return self.__thickness\n    def getHardness(self):\n        return self.__hardness\n    def getSize(self):\n        return self.__size\n    def setSize(self, value: int):\n        self.__size = value\n        \n    def init(self, thickness: float = 0, hardness: str = \"\", size: int = 0):\n        self.__thickness = thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def __str__(self):\n        return f\"[{self.__thickness}:{self.__hardness}:{self.__size}]\"\n\n\nclass Pencil:\n    def __init__(self):\n        self.tip: Lead | None = None\n        self.thickness: float = 0.0\n        self.barrel: list[Lead] = []\n\n    def init(self, thickness: float):\n        self.thickness = thickness\n\n    def hasGrafite(self) -> bool:\n        return self.tip is not None\n\n    def insert(self, lead: Lead):\n        if lead.getThickness() != self.thickness:\n            print(\"fail: calibre incompat\u00edvel\")\n            return\n        self.barrel.append(lead)\n\n    def pull(self):\n        if self.hasGrafite():\n            print(\"fail: ja existe grafite no bico\")\n            return\n        self.tip = self.barrel[0]\n        del self.barrel[0]\n\n    def remove(self):\n        self.tip = None\n\n    def write(self):\n        if not self.hasGrafite():\n            print(\"fail: nao existe grafite no bico\")\n            return\n        gasto = 0\n        if self.tip.getHardness() == \"HB\":\n            gasto = 1\n        elif self.tip.getHardness() == \"2B\":\n            gasto = 2\n        elif self.tip.getHardness() == \"4B\":\n            gasto = 4\n        elif self.tip.getHardness() == \"6B\":\n            gasto = 6\n\n        if self.tip.getSize() <= 10:\n            print(\"fail: tamanho insuficiente\")\n            return\n        novo_tamanho = self.tip.getSize() - gasto\n        if novo_tamanho < 10:\n            self.tip.setSize(10)\n            print(\"fail: folha incompleta\")\n            return\n\n        self.tip.setSize(novo_tamanho)\n\n    def __str__(self):\n        bico_str = \"[]\" if self.tip == None else self.tip\n        tambor_str = \"\".join([\"<>\" if x == [] else str(x) for x in self.barrel])\n        return f\"calibre: {self.thickness}, bico: {bico_str}, tambor: <{tambor_str}>\"\n    \ndef main():\n    lapis = Pencil()\n    while True:\n        line: str = input()\n        print(\"$\" + line)\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            calibre = float(args[1])\n            lapis.init(calibre)\n        elif args[0] == \"insert\":\n            calibre = float(args[1])\n            hardness = args[2]\n            size = int(args[3])\n            grafite = Lead(calibre, hardness, size)\n            lapis.insert(grafite)\n        elif args[0] == \"remove\":\n            lapis.remove()\n        elif args[0] == \"write\":\n            lapis.write()\n        elif args[0] == \"pull\":\n            lapis.pull()\n        elif args[0] == \"show\":\n            print(lapis)\n\nmain()",
+            "lines": "109"
+        }
+    ]
+}
