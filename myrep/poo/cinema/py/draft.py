@@ -64,17 +64,11 @@ def main():
         if args[0] == "show":
             print(cinema)
         if args[0] == "init":
-            capacity = int(args[1])
-            cinema.init(capacity)
+            cinema.init(int(args[1]))
         if args[0] == "reserve":
-            id = args[1]
-            phone = int(args[2])
-            index = int(args[3])
-            client = Client(id, phone)
-            cinema.reserve(index, client)
+            cinema.reserve(int(args[3]), Client(args[1], int(args[2])))
         if args[0] == "cancel":
-            id = args[1]
-            cinema.cancel(id)
+            cinema.cancel(args[1])
             
 
 main()

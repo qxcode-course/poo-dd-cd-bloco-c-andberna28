@@ -67,19 +67,15 @@ def main():
         elif args[0] == "show":
             print(budega)
         elif args[0] == "init":
-            qtd_counters = int(args[1])
-            budega.init(qtd_counters)
+            budega.init(int(args[1]))
         elif args[0] == "arrive":
             person = args[1]
             budega.arrive(person)
         elif args[0] == "call":
-            index = int(args[1])
-            budega.call(index)
+            budega.call(int(args[1]))
         elif args[0] == "finish":
-            index = int(args[1])
-            budega.finish(index)
+            budega.finish(int(args[1]))
         elif args[0] == "giveup":
-            name = args[1]
-            budega.give_up(name)
+            budega.give_up(args[1])
 
 main()

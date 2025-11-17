@@ -63,16 +63,12 @@ def main():
         if args[0] == "show":
             print(trampolim)
         if args[0] == "arrive":
-            nome = args[1]
-            idade = args[2]
-            kid = Kid(nome, idade)
-            trampolim.arrive(kid)
+            trampolim.arrive(Kid(args[1], int(args[2])))
         if args[0] == "enter":
             trampolim.enter()
         if args[0] == "leave":
             trampolim.leave()
         if args[0] == "remove":
-            nome = args[1]
-            trampolim.remove(nome)
+            trampolim.remove(args[1])
 
 main()

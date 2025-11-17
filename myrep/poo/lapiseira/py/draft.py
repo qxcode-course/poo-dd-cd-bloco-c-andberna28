@@ -88,14 +88,10 @@ def main():
         args: list[str] = line.split(" ")
         if args[0] == "end":
             break
-        elif args[0] == "init":
-            calibre = float(args[1])
-            lapis.init(calibre)
+        elif args[0] == "init": 
+            lapis.init(float(args[1]))
         elif args[0] == "insert":
-            calibre = float(args[1])
-            hardness = args[2]
-            size = int(args[3])
-            grafite = Lead(calibre, hardness, size)
+            grafite = Lead(float(args[1]), args[2], int(args[3]))
             lapis.insert(grafite)
         elif args[0] == "remove":
             lapis.remove()
